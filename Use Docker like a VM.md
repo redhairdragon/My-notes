@@ -14,7 +14,7 @@ For this tutorial, study the part 1 is enough.
 
 ## 2. Some terms:
 
-**Image **: something like ubuntu.iso. But in docker, it can also be a Python flask/sql environment . Go to https://hub.docker.com/ check what people have posted. You can also make your own image.
+**Image**: something like ubuntu.iso. But in docker, it can also be a Python flask/sql environment . Go to https://hub.docker.com/ check what people have posted. You can also make your own image.
 
 **container**: Instance of **Image**. Just like Win7/ubuntu/Mac os what you currently are using. 
 
@@ -81,6 +81,10 @@ e.g. *docker image ls*
 e.g. *docker container stop [container id]*
 
 *docker container rm [container id]*
+
+*docker container rm $(docker container -aq)*  removes all containers
+
+
 
 Also you can try to push your container to docker repo, and keep commiting and pushing your own docker image. Then you can quickly have your working environment everywhere :) Google it, not hard.
 
