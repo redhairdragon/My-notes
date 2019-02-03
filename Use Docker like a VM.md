@@ -28,7 +28,7 @@ I will explain what this command does in detail
 
 1. docker run ubuntu
 
-   Only use this one time for one image. This will downlooad **ubuntu** image and make a running container for you.
+   This will downlooad **ubuntu** image (if you don't have the image)and make a running container for you. 
 
 2. -it 
 
