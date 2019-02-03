@@ -94,6 +94,8 @@ e.g. ***docker container stop [container id]***
 
 ***docker rename shen shen1*** 
 
+***docker exec -it shen bash*** open another terminal
+
 Also you can try to push your container to docker repo, and keep commiting and pushing your own docker image. Then you can quickly have your working environment everywhere :) Google it, not hard.
 
 
