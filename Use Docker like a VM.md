@@ -58,13 +58,13 @@ You can quit the container terminal by Ctrl-d.
 
 If you want to enter the container again, use 
 
-*docker start -i Shen* 		//don't use *docker run*, it will create another container(not a big issue)
+***docker start -i Shen* **		//don't use ***docker run***, it will create another container(not a big issue)
 
 Also the ubuntu container you have is minial for running. 
 
 Run *apt-get update* for getting the lastes package list.
 
-Then you can run *apt-get install make/g++/vim...* to get whatever you usually use.
+Then you can run ***apt-get install make/g++/vim...*** to get whatever you usually use.
 
 ## 5. More on docker command 
 
