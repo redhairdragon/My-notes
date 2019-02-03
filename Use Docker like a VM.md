@@ -76,6 +76,8 @@ e.g. ***docker image ls***
 
 ***docker rmi -f ubuntu* **
 
+***docker stop shen***
+
 ***docker container --help*** check list of container related command
 
 e.g. ***docker container stop [container id]***
@@ -84,13 +86,15 @@ e.g. ***docker container stop [container id]***
 
 ***docker container rm $(docker container -aq)***  removes all containers
 
+...
 
+***docker ps: display currently-running containers***
+
+***docker start -i shen***
+
+***docker rename shen shen1*** 
 
 Also you can try to push your container to docker repo, and keep commiting and pushing your own docker image. Then you can quickly have your working environment everywhere :) Google it, not hard.
-
-
-
-
 
 
 
