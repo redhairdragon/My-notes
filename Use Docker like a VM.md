@@ -10,7 +10,7 @@ Using docker has many benefit, you can just google it. But in this case, it is j
 
 Go to https://docs.docker.com/get-started/. Simple :)
 
-For this tutorial, study the part 1 is enough.
+For this tutorial, go through the part 1 is enough.
 
 ## 2. Some terms:
 
@@ -20,9 +20,9 @@ For this tutorial, study the part 1 is enough.
 
 ## 3. Build a Ubuntu Container in Docker
 
-**command**: docker run -it -v[the folder in your machine]:[the fold in container] -p [port # in your machine]:[port # in container] --name [name] [Image Name]
+**just one command**: docker run -it -v[the folder in your machine]:[the fold in container] -p [port # in your machine]:[port # in container] --name [name] [Image Name]
 
-In this case: *docker run -it -v ~/docker:/root -p 80:8080 --name Shen ubuntu*
+In this case: ***docker run -it -v ~/docker:/root -p 80:8080 --name Shen ubuntu***
 
 I will explain what this command does in detail
 
@@ -50,7 +50,7 @@ After running $docker run -it -v ~/docker:/root -p 80:8080 --name Shen ubuntu
 
 you will probably have something like
 
-root@d4323f6e55ec:/#  in terminal. Then do what ever you want to do with the ubuntu
+root@d4323f6e55ec:/#  in terminal. Then do what ever you want to do with the system.
 
 ## 4. After 3
 
@@ -58,7 +58,7 @@ You can quit the container terminal by Ctrl-d.
 
 If you want to enter the container again, use 
 
-*docker start -i Shen* 		//don't use docker run, it will create another container(not a big issue)
+*docker start -i Shen* 		//don't use *docker run*, it will create another container(not a big issue)
 
 Also the ubuntu container you have is minial for running. 
 
@@ -70,19 +70,19 @@ Then you can run *apt-get install make/g++/vim...* to get whatever you usually u
 
 several useful docker commands
 
-*docker image --help* check list of image related command
+***docker image --help*** check list of image related command
 
-e.g. *docker image ls*  
+e.g. ***docker image ls***  
 
-*docker rmi -f ubuntu* 
+***docker rmi -f ubuntu* **
 
-*docker container --help* check list of container related command
+***docker container --help*** check list of container related command
 
-e.g. *docker container stop [container id]*
+e.g. ***docker container stop [container id]***
 
-*docker container rm [container id]*
+***docker container rm [container id]***
 
-*docker container rm $(docker container -aq)*  removes all containers
+***docker container rm $(docker container -aq)***  removes all containers
 
 
 
