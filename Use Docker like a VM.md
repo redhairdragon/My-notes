@@ -100,3 +100,23 @@ Also you can try to push your container to docker repo, and keep commiting and p
 
 
 
+## 6. Upload to Dockerhub
+
+***docker login*** first to gain access
+
+***docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]*** //tag existing image
+
+***docker build -t <hub-user>/<repo-name>[:<tag>]*** //build with tag
+
+***docker push <hub-user>/<repo-name>:<tag>***
+
+***docker commit <existing-container> <hub-user>/<repo-name>[:<tag>]*** //tag existing container
+
+ e.g:
+
+***docker commit d4323f6e55ec  redhairdragon/shen:first*** //tag shen as first
+
+***docker push redhairdragon/shen:first*** //push to repo as tag  *first*
+
+***docker pull redhairdragon/shen:first***
+
