@@ -120,3 +120,5 @@ Also you can try to push your container to docker repo, and keep commiting and p
 
 ***docker pull redhairdragon/shen:first***
 
+##7. GPU related
+add ***--gpus all*** to enable GPU driver in the container. Nvidia-docker has to be installed first.

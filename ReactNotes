@@ -1,0 +1,5 @@
+react-native init AwesomeProject
+react-native run-android
+
+adb devices
+adb -s 3239513745533098 reverse tcp:8081 tcp:8081
